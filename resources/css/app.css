@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+select,
+textarea {
+    color: #111827 !important;
+    background-color: #ffffff !important;
+    border-color: #d1d5db !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6b7280 !important;
+    opacity: 1 !important;
+}
+
+select option {
+    color: #111827 !important;
+    background-color: #ffffff !important;
+}
+
+input[type="datetime-local"] {
+    color: #111827 !important;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    opacity: 0.8;
+    filter: invert(0);
+}
+
+button,
+a[class*="bg-"],
+input[type="submit"] {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+button:hover,
+a[class*="bg-"]:hover,
+input[type="submit"]:hover {
+    transform: translateY(-4px);
+}
+
+button:active,
+a[class*="bg-"]:active,
+input[type="submit"]:active {
+    transform: scale(0.96);
+}
+
+.bg-gray-900.border,
+.bg-gray-950.border,
+.rounded-2xl.border,
+.rounded-3xl.border {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.bg-gray-900.border:hover,
+.bg-gray-950.border:hover,
+.rounded-2xl.border:hover,
+.rounded-3xl.border:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 45px rgba(99, 102, 241, 0.12);
+}
+
+td a:hover,
+td button:hover {
+    transform: translateY(-2px);
+}
+
+.dark-form input,
+.dark-form select,
+.dark-form textarea {
+    background-color: #020617 !important;
+    color: #ffffff !important;
+    border-color: #374151 !important;
+}
+
+.dark-form input::placeholder,
+.dark-form textarea::placeholder {
+    color: #6b7280 !important;
+    opacity: 1 !important;
+}
+
+.dark-form select option {
+    background-color: #020617 !important;
+    color: #ffffff !important;
+}
+
+.dark-form input[type="datetime-local"] {
+    color: #ffffff !important;
+}
+
+.dark-form input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.8;
+}
